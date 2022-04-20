@@ -1,0 +1,108 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    vertical-align: baseline;
+    font-size: 100%;
+    color: var(--accent)
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+    font-family: inherit;
+    vertical-align: inherit;
+    color: inherit
+  }
+
+  :root {
+    --accent: #11d411;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+  }
+  /* Optional: show position indicator in red */
+  ::-webkit-scrollbar-thumb {
+    background: var(--accent);
+  }
+  
+  ::selection {
+    background: var(--accent); /* WebKit/Blink Browsers */
+    color: black;
+  }
+  
+  ::-moz-selection {
+    background: var(--accent); /* Gecko Browsers */
+    color: black;
+  }
+  
+  a, p, span {
+    font-weight: 500;
+    font-style: normal;
+    color: var(--c, --accent, white);
+    vertical-align: baseline;
+  }
+  
+  a:hover {
+    background-color: var(--accent);
+    color: black;
+  }
+  
+  body {
+    background-image: url("/art.png");
+    background-size: cover;
+  }
+  
+  ul {
+      list-style: circle;
+  }
+  
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section {
+      display: block;
+  }
+  
+  input, button, textarea, select {
+    background-color: #333;
+  }
+  
+  .no-scroll {
+    overflow-y: hidden;
+  }
+  
+  .scroll-override {
+    overflow-y: auto;
+  }
+  
+  .page {
+    margin-bottom: 120vh;
+  }
+  
+  /* box with stuff */
+  .box {
+    width: 600px;
+    padding: 15px;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    /*background-color: rgba(0, 0, 0, 0);
+    background-size: 100%;
+    border: solid var(--accent);
+    border-width: 2px;
+    */
+    position: relative;
+  }
+  
+  /* centered text */
+  .txt {
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+  }
+  
+  .mobiletext {
+    font-size: 0pt;
+    padding: 0px;
+    margin: 0px;
+  }
