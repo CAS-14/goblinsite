@@ -3,7 +3,7 @@ var imageIndex = 0;
 function cycleBackground() {
     imageIndex += 1;
 
-    if (imageIndex >= images.length()) {
+    if (imageIndex > 1) {
         imageIndex = 0;
     }
 
