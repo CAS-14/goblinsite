@@ -8,14 +8,14 @@ html {
   font-family: "Linux Libertine Mono", "Times New Roman", Times, serif;
   vertical-align: baseline;
   font-size: 100%;
-  color: var(--accent)
+  color: var(--accent);
 }
   
 *, *:before, *:after {
   box-sizing: inherit;
   font-family: inherit;
   vertical-align: inherit;
-  color: inherit
+  color: inherit;
 }
 
 :root {
@@ -26,6 +26,7 @@ html {
   width: 0;  /* Remove scrollbar space */
   background: transparent;  /* Optional: just make scrollbar invisible */
 }
+
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
   background: var(--accent);
@@ -53,4 +54,18 @@ body {
 
 ul {
     list-style: circle;
+}
+
+.box {
+  width: 600px;
+  padding: 15px;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  /*background-color: rgba(0, 0, 0, 0);
+  background-size: 100%;
+  border: solid var(--accent);
+  border-width: 2px;
+  */
+  position: relative;
 }
