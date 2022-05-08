@@ -1,4 +1,3 @@
-var images = ["background.jpg", "art.png"];
 var imageIndex = 0;
 
 function cycleBackground() {
@@ -8,5 +7,5 @@ function cycleBackground() {
         imageIndex = 0;
     }
 
-    document.body.style.backgroundImage = "url('assets/"+images[imageIndex]+"')"
+    document.body.style.backgroundImage = "url('assets/background/bg"+imageIndex+".png')"
 }
