@@ -1,6 +1,9 @@
 function cycleBackground() {
     var imageIndex = localStorage.getItem("imageIndex");
-    if (imageIndex == null) imageIndex = 1;
+    if (imageIndex == null) { 
+        imageIndex = 1;
+        console.log("image index initialized to 1")
+    }
 
     console.log("image index before increment : "+imageIndex);
 
