@@ -16,6 +16,7 @@ html {
   font-family: inherit;
   vertical-align: inherit;
   color: inherit;
+  background: black;
 }
 
 :root {
@@ -40,10 +41,6 @@ html {
 ::-moz-selection {
   background: var(--accent); /* Gecko Browsers */
   color: black;
-}
-
-p, a {
-  background-color: black;
 }
 
 a:hover {
