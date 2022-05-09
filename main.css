@@ -43,11 +43,11 @@ html {
 }
 
 p, a {
-  background: black;
+  background-color: black;
 }
 
 a:hover {
-  background: var(--accent);
+  background-color: var(--accent);
   color: black;
 }
 
