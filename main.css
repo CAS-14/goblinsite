@@ -21,6 +21,7 @@ html {
 :root {
   --accent-light: #11d411;
   --accent-dark: #000000;
+  --background: url('assets/background/bg1.png')
 }
 
 ::-webkit-scrollbar {
@@ -53,7 +54,7 @@ a:hover {
 }
 
 body {
-  background-image: url("/assets/background/bg1.png");
+  background-image: var(--background);
   background-size: cover;
 }
 

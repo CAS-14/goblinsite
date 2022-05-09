@@ -10,7 +10,9 @@ function cycleBackground() {
     imageIndex ++;
     if (imageIndex > 3) imageIndex = 1;
 
-    document.body.style.backgroundImage = "url('assets/background/bg" + imageIndex + ".png')";
+    rs = document.querySelector(":root").style;
+    rs.setProperty("--background", "url('assets/background/bg" + imageIndex + ".png')");
+
     localStorage.setItem("imageIndex", imageIndex);
     console.log("image index after load: "+imageIndex);
 }
