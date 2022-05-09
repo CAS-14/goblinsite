@@ -1,10 +1,9 @@
 var imageIndex = localStorage.getItem("imageIndex");
 if (imageIndex == null) {
     imageIndex = 1;
-    localStorage.setItem("imageIndex", imageIndex)
 }
 
-document.body.style.backgroundImage = "url('assets/background/bg"+imageIndex+".png')";
+loadBackground(imageIndex)
 
 function cycleBackground() {
     imageIndex += 1;
@@ -12,6 +11,10 @@ function cycleBackground() {
         imageIndex = 1;
     }
 
-    localStorage.setItem("imageIndex", imageIndex);
+    loadBackground(imageIndex);
+}
+
+function loadBackground(imageIndex) {
     document.body.style.backgroundImage = "url('assets/background/bg"+imageIndex+".png')";
+    localStorage.setItem("imageIndex", imageIndex);
 }
