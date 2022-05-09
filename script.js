@@ -4,6 +4,8 @@ if (imageIndex == null) {
     localStorage.setItem("imageIndex", imageIndex)
 }
 
+document.body.style.backgroundImage = "url('assets/background/bg"+imageIndex+".png')";
+
 function cycleBackground() {
     imageIndex += 1;
     if (imageIndex > 3) {
