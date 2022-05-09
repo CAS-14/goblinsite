@@ -42,8 +42,12 @@ html {
   color: black;
 }
 
+p, a {
+  background: black;
+}
+
 a:hover {
-  background-color: var(--accent);
+  background: var(--accent);
   color: black;
 }
 
