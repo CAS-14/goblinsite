@@ -8,7 +8,7 @@ html {
   font-family: "Linux Libertine Mono", "Times New Roman", Times, serif;
   vertical-align: baseline;
   font-size: 100%;
-  color: var(--accent);
+  color: var(--accent-light);
 }
   
 *, *:before, *:after {
@@ -19,7 +19,8 @@ html {
 }
 
 :root {
-  --accent: #11d411;
+  --accent-light: #11d411;
+  --accent-dark: #000000;
 }
 
 ::-webkit-scrollbar {
@@ -29,26 +30,26 @@ html {
 
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
-  background: var(--accent);
+  background: var(--accent-light);
 }
 
 ::selection {
-  background: var(--accent); /* WebKit/Blink Browsers */
-  color: black;
+  background: var(--accent-light); /* WebKit/Blink Browsers */
+  color: var(--accent-dark);
 }
 
 ::-moz-selection {
-  background: var(--accent); /* Gecko Browsers */
-  color: black;
+  background: var(--accent-light); /* Gecko Browsers */
+  color: var(--accent-dark);
 }
 
-p, a {
-  background: black
+p, a, span {
+  background: var(--accent-dark)
 }
 
 a:hover {
-  background: var(--accent);
-  color: black;
+  background: var(--accent-light);
+  color: var(--accent-dark);
 }
 
 body {
@@ -68,7 +69,7 @@ ul {
   margin-right: auto;
   /*background-color: rgba(0, 0, 0, 0);
   background-size: 100%;
-  border: solid var(--accent);
+  border: solid var(--accent-light);
   border-width: 2px;
   */
   position: relative;
