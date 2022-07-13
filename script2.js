@@ -1,1 +1,0 @@
-function cycleBackground(d){var i=localStorage.getItem("imageIndex");if(i==null)i=1;if(d)i++;if(i>3)i=1;document.querySelector(":root").style.setProperty("--background","url('assets/background/bg"+i+".png')");localStorage.setItem("imageIndex",i);}
